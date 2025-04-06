@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DotSight | Braille Learning Tool</title>
+  <link rel="stylesheet" href="assets/bootstrap-5.3.3/dist/css/bootstrap.min.css">
+  <style>
+    .braille-symbol {
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+    .letter-box {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-light text-center p-4">
+
+  <h1 class="mb-4">Braille Learning App</h1>
+
+  <div class="container">
+    <div id="letterGrid" class="d-flex flex-wrap justify-content-center"></div>
+
+    <div id="brailleOutput" class="mt-4">
+      <h3 id="selectedLetter"></h3>
+      <div id="brailleSymbol" class="braille-symbol"></div>
+    </div>
+
+    <div class="mt-5">
+        <a href="quiz.html" class="btn btn-outline-dark btn-lg">Try Quiz Mode 🎓</a>
+      </div>
+  </div>
+
+  <script src="braille.js"></script>
+</body>
+</html>

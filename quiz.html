@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DotSight | Braille Learning Tool</title> 
+  <link rel="stylesheet" href="assets/bootstrap-5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" />
+  <style>
+    .braille-symbol {
+      font-size: 2rem;
+    }
+    .braille-option {
+      font-size: 2rem;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-light text-center p-4">
+  <h1 class="mb-4">Braille Quiz Mode</h1>
+
+  <div class="container">
+    <h3 id="quizPrompt">What is the Braille for: <span id="quizLetter"></span>?</h3>
+    <div id="options" class="d-flex justify-content-center flex-wrap mt-3"></div>
+    <div id="feedback" class="mt-3 fs-5 fw-bold"></div>
+    <button class="btn btn-success mt-4" onclick="startQuiz()">Next Question</button>
+
+    <div class="mt-5">
+        <a href="index.html" class="btn btn-outline-dark btn-lg">Back to <i class="fa fa-home" aria-hidden="true"></i> </a>
+        <a href="index.html" class="btn btn-outline-dark btn-lg">Back to <i class="fa fa-home" aria-hidden="true"></i> </a>
+      </div>
+  </div>
+</div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
